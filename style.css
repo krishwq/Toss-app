@@ -141,3 +141,10 @@ h1{
 p{
     font-size: 20px;
 }
+@media screen and (max-width:450px) {
+    .score{
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+}
