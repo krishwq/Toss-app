@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    background-image: linear-gradient(#e1ecc8,#f7ffe5);
+}
+h1{
+    margin-top: 5px;
+}
+.score{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    align-items: center;
+    font-size: 10px;
+    gap: 30px;
+}
+
+.container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    background-image: linear-gradient(to bottom right, #a0c49d, #e1ecc8);
+    border-radius: 10px;
+    border: 1.5px black solid;
+}
+
+.coin {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(138, 196, 186);
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip {
+    animation: flip 1s ease 1;
+}
+
+@keyframes flip {
+    0% {
+
+        transform: rotatex(0deg) scale(1,1) ;
+    }
+    25%{
+        transform: rotatex(7200deg) scale(1.25,1.25) ;
+
+    }
+
+    50% {
+
+        transform: rotatex(1440deg) scale(1.5,1.5) ;
+
+    }
+    75%{
+        transform: rotatex(2160deg) scale(1.25,1.25) ;
+
+    }
+
+    100% {
+
+        transform: rotatex(2880deg) scale(1,1);
+    }
+}
+.buttons{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.toss{
+    background-color: #c4d7b2;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.head-tail button{
+    background-color: #c4d7b2;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#focus{
+    background-color: green;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.head-tail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.reset{
+    background-color: #c4d7b2;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.result{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hide{
+    display: none;
+}
+p{
+    font-size: 20px;
+}

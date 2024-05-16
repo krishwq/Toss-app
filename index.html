@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip A Coin</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="body">
+        <h1>Heads Or Talis</h1>
+        <div class="score">
+            <p id="win">Win : 0</p>
+            <p id="loss">Loss : 0</p>
+        </div>
+    <div class="container">
+        <div class="coin">
+            <p id="showresult">COIN</p>
+        </div>
+    </div>
+    <div class="buttons">
+        <div><button type="button" class="toss" onclick="tosscoin()" disabled>Toss</button></div>
+        <p>Choose your Opinion</p>
+        <div class="head-tail">
+            <button type="button" class="headcoin" id="" onclick="headcoin()">Head</button>
+            <button type="button" class="tailcoin"  id="" onclick="tailcoin()">Tail</button>
+        </div>
+    </div>
+    <div class="result hide">
+        <p id="winner"></p><br>
+        <button type="button" class="reset" onclick="reset()">Reset</button>
+    </div>
+    </div>
+</body>
+<script src="app.js" type="text/javascript"></script>
+</html>
